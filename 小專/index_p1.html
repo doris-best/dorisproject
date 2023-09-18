@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康飲食</title>
+
+
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <!--导航-->
+    <div class="navbar navbar-fixed-top" style="background-color: #006663;">
+        <div class="container">
+            <div class="nav-logo">
+                <a class="" href="./index_home.html">
+                    <img class="img-responsive" src="./images/health_logo.png" alt="健康飲食"
+                        style="height: 100%;width: auto;margin-top: 2%;" />
+                </a>
+            </div>
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right" id="navBar">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            聰明飲食<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="./index_w1.html">低GI飲食</a></li>
+                            <li><a href="./index_w2.html">低卡飲食</a></li>
+                            <li><a href="./index_w3.html">168斷食法/52斷食法</a></li>
+                            <li><a href="./index_w4.html">地中海飲食</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            穩定血糖<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="./index_p1.html">低糖飲食概念</a></li>
+                            <li><a href="./index_p2.html">低糖飲食的好處與壞處</a></li>
+                            <li><a href="./index_p3.html">低糖飲食挑選食物原則</a></li>
+                            <li><a href="./index_p4.html">低糖飲食進食順序</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./index_bmi.html">BMI指數檢測</a></li>
+                    <li><a href="./index_qs.html">諮詢服務</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <span></span>
+
+
+
+    <!-- 一餐一份醣-->
+    <div class="green-nav">
+        <h3>低醣飲食概念</h3>
+        <br>
+        <p class="theme_description">
+            低醣飲食」又稱為「低碳飲食」，是 1989 年由美國醫生羅伯特．阿特金斯（Robert Atkins）所發明的飲食方法，主要是針對肥胖者和糖尿病族群而設計。
+
+        </p>
+        <br>
+        <p class="theme_description">
+            低醣飲食原則是： 20% 醣類、30% 蛋白質、50% 優質油脂。
+            <br>
+            之所以會攝取這麼少醣類的原因在於，人體之中首要立即運用的能量來源為「醣」，而不是脂肪，因此在人體快速消耗體內的醣類後，才會轉向轉消耗脂肪作為能量燃燒的來源，這也是低糖飲食要降低醣類攝取的原因，使體內優先使用脂肪作為能量。
+            因此低醣飲食對熱量攝取並不多加限制，而是透過營養素比例分配，來降低碳水化合物、提高蛋白質與脂肪攝取量，進而達到高飽足感、降低血脂與減肥的效果。
+            <br>醣主要分為 5種：單醣、雙醣、寡醣、多醣、膳食纖維。其中，單醣、雙醣被分為「簡單醣」，而寡醣、多醣與膳食纖維，則被分為「複合醣」。所謂的「簡單醣」也就是米字旁的「糖」，嚐起來通常有甜味，像是砂糖（蔗糖）、果糖等；而「複合醣」的碳水化合物則不一定有甜味，像是：飯、麵、地瓜、水果等。
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+
+        <div class="box" style="color: #a3a3a3; font-size: 16px; font-weight: 400; line-height: 22px;">
+            © 2023 by Healthy Diet All rights reserved!
+        </div>
+
+    </footer>
+
+
+</body>
+<script>
+    // 確保在頁面加載完全後再執行代碼
+    window.onload = function () {
+        // 獲取表單元素
+        var form = document.querySelector('form');
+
+        // 綁定表單提交事件
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // 阻止表單提交的默認行為
+
+            // 獲取表單數據
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var gender = document.getElementById('gender').value;
+            var question = document.getElementById('question').value;
+
+            // 在控制台中印出表單數據
+            console.log('姓名:', name);
+            console.log('電子郵件:', email);
+            console.log('電話號碼:', phone);
+            console.log('性別:', gender);
+            console.log('諮詢問題:', question);
+
+            // 清空表單
+            form.reset();
+
+            // 提示用戶提交成功
+            alert('問卷提交成功！');
+
+            // 在這裡可以進行其他相應的操作
+            // ...
+        });
+    };
+</script>
+
+
+
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康飲食</title>
+
+
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <!--导航-->
+    <div class="navbar navbar-fixed-top" style="background-color: #006663;">
+        <div class="container">
+            <div class="nav-logo">
+                <a class="" href="./index_home.html">
+                    <img class="img-responsive" src="./images/health_logo.png" alt="健康飲食"
+                        style="height: 100%;width: auto;margin-top: 2%;" />
+                </a>
+            </div>
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right" id="navBar">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            聰明飲食<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="./index_w1.html">低GI飲食</a></li>
+                            <li><a href="./index_w2.html">低卡飲食</a></li>
+                            <li><a href="./index_w3.html">168斷食法/52斷食法</a></li>
+                            <li><a href="./index_w4.html">地中海飲食</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            穩定血糖<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="./index_p1.html">低糖飲食概念</a></li>
+                            <li><a href="./index_p2.html">低糖飲食的好處與壞處</a></li>
+                            <li><a href="./index_p3.html">低糖飲食挑選食物原則</a></li>
+                            <li><a href="./index_p4.html">低糖飲食進食順序</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./index_bmi.html">BMI指數檢測</a></li>
+                    <li><a href="./index_qs.html">諮詢服務</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <span></span>
+
+
+
+    <!--進食順序這樣吃-->
+    <div class="green-nav">
+        <h3>低醣進食順序這樣吃</h3>
+        <br>
+        <p class="theme_description">
+            進食順序：蔬菜→魚、肉、蛋→澱粉
+            <br>
+            <span
+                style="font-weight: lighter;">進食順序也會影響血糖上升的速度。一般人可以選擇最先吃蔬菜，高纖的食材會延緩血糖上升的速度，也會增加飽足感，還能促進腸胃蠕動，預防便秘。接著再吃消化較慢的蛋白質的食物，可在胃部停留較長時間，也能增加飽足感。全穀類、根莖類、白飯等澱粉類食材放到最後吃。</span>
+
+        </p>
+        <br>
+        <p class="theme_description">
+            這兩種人要先吃蛋白質
+            <br>胃食道逆流與有肌少症的老人建議先吃蛋白質後吃菜。
+            <br><span style="font-weight: lighter;">
+                澱粉及甜食容易刺激胃酸分泌，造成胃食道逆流症狀加重，而胃的消化酵素主要用來分解蛋白質，先吃蛋白質能幫助蛋白質消化，接著吃蔬菜後，纖維質會把多餘胃酸包住帶往腸道，能減緩胃酸對胃壁的刺激，也不容易因為胃酸過多而產生逆流。
+
+                而老人家如果先吃菜可能就吃飽了，建議先吃蛋白質，以提供增長肌肉的原料。
+            </span>
+
+        </p>
+        <br><br><br><br><br>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+
+        <div class="box" style="color: #a3a3a3; font-size: 16px; font-weight: 400; line-height: 22px;">
+            © 2023 by Healthy Diet All rights reserved!
+        </div>
+
+    </footer>
+
+
+</body>
+<script>
+    // 確保在頁面加載完全後再執行代碼
+    window.onload = function () {
+        // 獲取表單元素
+        var form = document.querySelector('form');
+
+        // 綁定表單提交事件
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // 阻止表單提交的默認行為
+
+            // 獲取表單數據
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var gender = document.getElementById('gender').value;
+            var question = document.getElementById('question').value;
+
+            // 在控制台中印出表單數據
+            console.log('姓名:', name);
+            console.log('電子郵件:', email);
+            console.log('電話號碼:', phone);
+            console.log('性別:', gender);
+            console.log('諮詢問題:', question);
+
+            // 清空表單
+            form.reset();
+
+            // 提示用戶提交成功
+            alert('問卷提交成功！');
+
+            // 在這裡可以進行其他相應的操作
+            // ...
+        });
+    };
+</script>
+
+
+
+
+</html>

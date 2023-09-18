@@ -1,0 +1,381 @@
+/* 綠色导航开始 */
+
+
+.navbar {
+    /* height: 20%; */
+    width: 100%;
+    /* 设置导航栏的宽度为100% */
+    /* margin-top: 5px;   */
+    margin: 0 auto;
+    /* 居中对齐导航栏 */
+    color: white;
+}
+
+.navbar-header {
+    color: #BAE9D5;
+}
+
+.nav-logo {
+    float: left;
+    height: 40px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.nav-logo a {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav li a {
+    color: #BAE9D5;
+    /* 设置字体颜色为白色 */
+}
+
+.dropdown-menu > li > a {
+    color: #225033;
+    text-align: center;
+    
+  }
+  
+  .dropdown-menu > li > a:hover {
+    background-color: #DBED97;
+    color: #4CAF50
+  }
+  
+  .dropdown a:hover {
+    background-color: #DBED97;
+    color: #4CAF50
+  }
+
+
+
+.navbar-toggle .icon-bar {
+    background-color: #BAE9D5;
+}
+
+/* 輪播圖片 */
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    /* 设置轮播容器的高度 */
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-text {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+/* 添加动画效果 */
+@keyframes carousel {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 1;
+    }
+
+    53.33% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.slideshow-container .slide:nth-child(1) {
+    animation: carousel 10s infinite;
+}
+
+.slideshow-container .slide:nth-child(2) {
+    animation: carousel 10s infinite 4s;
+}
+
+.slideshow-container .slide:nth-child(3) {
+    animation: carousel 10s infinite 8s;
+}
+
+/* 如何獲得健康飲食和穩定血糖 */
+
+.green-nav2 {
+    width: 100%;
+    color:  #006663;
+    /* margin-top: 10%; */
+    padding: 3% 5%;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.green-nav {
+    width: 100%;
+    color:  #006663;
+    /* margin-top: 10%; */
+    padding: 15%;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wrap {
+    /* width: 1226px; */
+    margin: 0 auto;
+}
+
+#my-image {
+    width: 100%;
+    height: 100%;
+    /* object-fit:contain */
+}
+
+.card-text {
+    color: black;
+    font-size: 16px;
+
+}
+
+
+.container_button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+  
+  
+  .left {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .right {
+    flex: 1;
+    padding: 10px;
+    
+  }
+
+  .center {
+    width: 100%;
+    text-align: center;
+  }
+
+  
+  
+
+  .button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+  }
+  
+  .button:hover {
+    background-color: #006663;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+
+
+
+
+  
+  
+
+
+
+/* footer */
+
+
+.box {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    padding: 2%;
+    background-color: black;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+
+/* <!-- BMI測試 --> */
+
+.bmi-calculator {
+  width: 300px;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.bmi-calculator button {
+  width: 200px;
+  padding: 8px 16px;
+  background-color:#006663;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.bmi-calculator button:hover {
+  background-color: #45a049;
+}
+
+
+
+.theme_description {
+    padding: 2% 4%;
+    color: #333F48;
+    line-height: 1.7em;
+    font-weight: 600;
+    font-size: 1.1em;
+    background-color: #F6F8EC;
+    text-align: left;
+}
+
+
+.theme_description2 {
+    padding: 2% 4%;
+    color: #333F48;
+    line-height: 1.7em;
+    font-weight: 600;
+    font-size: 1.1em;
+    background-color: #F09302;
+    color:white;
+    text-align: center;
+}
+
+.table-responsive {
+    border-color: transparent;
+    overflow-x: auto;
+    min-height: 0.01%;
+    text-align: center;
+
+}
+.table-bordered {
+    border: 1px solid white;
+}
+
+.table {
+    border: transparent;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.word1 {
+    margin: 40px;
+}
+
+.form1 label:hover {
+    background-color: rgb(117, 87, 70);
+    color: white;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
+  .form1 label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+  }
+
+  .form1 input[type="text"],
+  .form1 input[type="email"],
+  .form1 input[type="tel"],
+  .form1 select[type="sexy"],
+  .form1 textarea {
+    padding: 10px;
+    font-size: 12px;
+    align-self: stretch;
+    width: 300px; /* 調整輸入框寬度的值 */
+    font-size: 16px;
+  }
+
+  button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    padding: 10px 10px;
+    border-radius: 30px;
+    background-color:#006663
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 50%;
+    height: 5px;
+    overflow: hidden;
+    max-width: 100%;
+    margin: auto;
+  }

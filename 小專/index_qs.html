@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康飲食</title>
+
+
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <!--导航-->
+    <div class="navbar navbar-fixed-top" style="background-color: #006663;">
+        <div class="container">
+            <div class="nav-logo">
+                <a class="" href="./index_home.html">
+                    <img class="img-responsive" src="./images/health_logo.png" alt="健康飲食"
+                        style="height: 100%;width: auto;margin-top: 2%;" />
+                </a>
+            </div>
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right" id="navBar">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            聰明飲食<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="./index_w1.html">低GI飲食</a></li>
+                            <li><a href="./index_w2.html">低卡飲食</a></li>
+                            <li><a href="./index_w3.html">168斷食法/52斷食法</a></li>
+                            <li><a href="./index_w4.html">地中海飲食</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            穩定血糖<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="./index_p1.html">低糖飲食概念</a></li>
+                            <li><a href="./index_p2.html">低糖飲食的好處與壞處</a></li>
+                            <li><a href="./index_p3.html">低糖飲食挑選食物原則</a></li>
+                            <li><a href="./index_p4.html">低糖飲食進食順序</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./index_bmi.html">BMI指數檢測</a></li>
+                    <li><a href="./index_qs.html">諮詢服務</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <span></span>
+
+
+
+    <!-- BMI測試 -->
+    <div class="green-nav">
+        <h3>諮詢健康服務</h3>
+        <br>
+        <p class="theme_description">
+            "健康飲食諮詢問卷："
+            <br>
+            如果您對健康飲食想要進一步了解，請填寫以下問卷，並留下您的聯繫方式。
+        </p>
+        <br>
+
+        <!-- 問卷 -->
+        <form>
+
+            <div class="form1">
+
+                <label for="boy">請問你的性別：</label>
+                <select name="gender" id="gender" type="sexy" required>
+                    <option value="">請選擇</option>
+                    <option value="female">女生</option>
+                    <option value="male">男生</option>
+                    <option value="other">其他選項</option>
+                </select>
+
+            </div>
+
+            <div class="form1">
+                <label for="name">請輸入姓名：</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form1">
+                <label for="email">請輸入電子郵件：</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form1">
+                <label for="phone">請輸入電話號碼：</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form1">
+                <label for="boy">請問您諮詢問題方向：</label>
+                <select name="question" id="question" type="sexy" required>
+                    <option value="">請選擇</option>
+                    <option value="healthy_diet">健康飲食</option>
+                    <option value="stable_blood_sugar">穩定血糖</option>
+                    <option value="other_question">其他問題</option>
+                  </select>
+                <br><br>
+
+                <button type="submit">提交問卷</button>
+
+        </form>
+
+
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+
+        <div class="box" style="color: #a3a3a3; font-size: 16px; font-weight: 400; line-height: 22px;">
+            © 2023 by Healthy Diet All rights reserved!
+        </div>
+
+    </footer>
+
+
+</body>
+<script>
+    // 確保在頁面加載完全後再執行代碼
+    window.onload = function() {
+      // 獲取表單元素
+      var form = document.querySelector('form');
+  
+      // 綁定表單提交事件
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // 阻止表單提交的默認行為
+  
+        // 獲取表單數據
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var gender = document.getElementById('gender').value;
+        var question = document.getElementById('question').value;
+  
+        // 在控制台中印出表單數據
+        console.log('姓名:', name);
+        console.log('電子郵件:', email);
+        console.log('電話號碼:', phone);
+        console.log('性別:', gender);
+        console.log('諮詢問題:', question);
+  
+        // 清空表單
+        form.reset();
+  
+        // 提示用戶提交成功
+        alert('問卷提交成功！');
+  
+        // 在這裡可以進行其他相應的操作
+        // ...
+      });
+    };
+  </script>
+  
+  
+  
+
+</html>

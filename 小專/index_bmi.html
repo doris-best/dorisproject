@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康飲食</title>
+
+
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <!--导航-->
+    <div class="navbar navbar-fixed-top" style="background-color: #006663;">
+        <div class="container">
+            <div class="nav-logo">
+                <a class="" href="./index_home.html">
+                    <img class="img-responsive" src="./images/health_logo.png" alt="健康飲食"
+                        style="height: 100%;width: auto;margin-top: 2%;" />
+                </a>
+            </div>
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right" id="navBar">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            聰明飲食<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="./index_w1.html">低GI飲食</a></li>
+                            <li><a href="./index_w2.html">低卡飲食</a></li>
+                            <li><a href="./index_w3.html">168斷食法/52斷食法</a></li>
+                            <li><a href="./index_w4.html">地中海飲食</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            穩定血糖<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="./index_p1.html">低糖飲食概念</a></li>
+                            <li><a href="./index_p2.html">低糖飲食的好處與壞處</a></li>
+                            <li><a href="./index_p3.html">低糖飲食挑選食物原則</a></li>
+                            <li><a href="./index_p4.html">低糖飲食進食順序</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./index_bmi.html">BMI指數檢測</a></li>
+                    <li><a href="./index_qs.html">諮詢服務</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <span></span>
+
+
+
+    <!-- BMI測試 -->
+    <div class="green-nav">
+        <h3>BMI指數測試</h3>
+        <br>
+        <p class="theme_description">
+            "說明："
+            <br>
+            世界衛生組織建議以身體質量指數（Body Mass Index, BMI）來衡量肥胖程度，其計算公式是以體重（公斤）除以身高（公尺）的平方。
+            國民健康署建議我國成人BMI應維持在18.5（kg/㎡）及24（kg/㎡）之間，太瘦、過重或太胖皆有礙健康。
+            研究顯示，體重過重或是肥胖（BMI≧24）為糖尿病、心血管疾病、惡性腫瘤等慢性疾病的主要風險因素；而過瘦的健康問題，則會有營養不良、骨質疏鬆、猝死等健康問題。
+        </p>
+        <br>
+
+        <!-- 計算器 -->
+        <div class="bmi-calculator">
+            <label for="height">身高（公分）：</label>
+            <input type="number" id="height" placeholder="請輸入身高" />
+            <br>
+            <label for="weight">體重（公斤）：</label>
+            <input type="number" id="weight" placeholder="請輸入體重" />
+<br><br>
+            <button onclick="calculateBMI()"> 計算BMI </button>
+<br><br>
+            <label for="bmi">BMI：</label>
+            <input type="text" id="bmi" readonly />&lt;kg/㎡
+        </div>
+    </div>
+    <!-- 數值對照 -->
+    <div class="theme_description2">
+
+
+        <div class="table-responsive">
+            <table style="width: 100%; text-align: center;" class="table-bordered">
+                <th>
+                    <div style="text-align: center;color: black;">成人肥胖定義</div>
+                </th>
+                <th>
+                    <div style="text-align: center;color: black;">身體質量指數(BMI)(kg/㎡)</div>
+                </th>
+                <th>
+                    <div style="text-align: center;color: black;">腰圍(cm)</div>
+                </th>
+
+                <tr>
+                <td>體重過輕</td>
+                <td>BMI&lt;18.5</td>
+                <td></td>
+                </tr>
+
+                <tr>
+                    <td>健康體位</td>
+                    <td>18.5≤BMI&lt;24</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>體位異常</td>
+                    <td>過重：24≤BMI&lt;27<br>
+                        輕度肥胖：27 ≤ BMI&lt; 30<br>
+                        中度肥胖：30 ≤ BMI&lt; 35<br>
+                        重度肥胖：BMI ≥ 35</td>
+                    <td>男性：≥ 90 公分<br>
+                        女性：≥ 80 公分</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+
+        <div class="box" style="color: #a3a3a3; font-size: 16px; font-weight: 400; line-height: 22px;">
+            © 2023 by Healthy Diet All rights reserved!
+        </div>
+
+    </footer>
+
+
+</body>
+<Script>
+
+    function calculateBMI() {
+        var height = parseFloat(document.getElementById("height").value);
+        var weight = parseFloat(document.getElementById("weight").value);
+        // BMI計算邏輯
+        var bmi = weight / ((height / 100) ** 2);
+        // 將BMI輸出到輸出框
+        document.getElementById("bmi").value = bmi.toFixed(2);
+    }
+
+
+
+
+
+
+</Script>
+
+</html>
